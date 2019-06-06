@@ -8,6 +8,7 @@ export default function Header() {
                     Abount me
                 </li>
                 <li>Contacts</li>
+                <li>My project</li>
             </ul>
         </div>
     )
