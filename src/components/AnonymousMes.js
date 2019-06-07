@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 export default function AnonymousMes({
     myMessage = 'Two and two are five?',
-    ...props
 } = {}) {
 
     var [message, setMessage] = useState(myMessage)
