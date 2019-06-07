@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 
 import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
+import Contacts from "./components/Contacts";
 import AnonymousMes from './components/AnonymousMes'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
             <h1>Reviakin Dmitry</h1>
             <Header />
             <AboutMe />
+            <Contacts />
             <AnonymousMes />
         </div>
     );
