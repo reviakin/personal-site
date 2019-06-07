@@ -1,7 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import Header from "./components/Header";
+import Header from "./components/Header"
+import AboutMe from "./components/AboutMe"
 import AnonymousMes from './components/AnonymousMes'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div>
             <h1>Reviakin Dmitry</h1>
             <Header />
+            <AboutMe />
             <AnonymousMes />
         </div>
     );
