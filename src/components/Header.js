@@ -9,6 +9,7 @@ export default function Header() {
                 </li>
                 <li>My project</li>
                 <li>Contacts</li>
+                <li>Anonymous</li>
             </ul>
         </div>
     )
