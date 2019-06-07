@@ -24,9 +24,9 @@ export default function AnonymousMes({
 
     return (
         <div>
+            <h2>Anonymous message:</h2>
             <form>
                 <label>
-                    anonymous message
                     <input
                         type="text"
                         value={message}
