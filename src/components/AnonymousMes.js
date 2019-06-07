@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 
 export default function anonymousMes() {
 
-    var [mesVal, setMesVal] = useState('')
+    var [message, setMessage] = useState('')
     var [messages, setMessages] = useState([])
 
     function handleChangeMes(event) {
-        setMesVal(event.target.value)
+        setMessage(event.target.value)
     }
 
     function submitMes(event) {
@@ -14,10 +14,10 @@ export default function anonymousMes() {
         var oldMessages = [...messages]
         var updateMessages = [
             ...oldMessages,
-            mesVal
+            message
         ]
         setMessages(updateMessages)
-        setMesVal('')
+        setMessage('')
     }
 
     return (
@@ -27,7 +27,7 @@ export default function anonymousMes() {
                     anonymous message
                     <input
                         type="text"
-                        value={mesVal}
+                        value={message}
                         placeholder='What do you think?'
                         onChange={handleChangeMes}
                     />
