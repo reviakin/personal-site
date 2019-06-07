@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function anonymousMes() {
 
-    var [message, setMessage] = useState('2+2=5')
+    var [message, setMessage] = useState('Two and two are five')
     var [messages, setMessages] = useState([])
 
     function handleChangeMes(event) {
