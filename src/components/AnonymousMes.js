@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 
-export default function anonymousMes() {
+export default function anonymousMes({
+    myMessage = 'Two and two are five?',
+    ...props
+} = {}) {
 
-    var [message, setMessage] = useState('Two and two are five')
+    var [message, setMessage] = useState(myMessage)
     var [messages, setMessages] = useState([])
 
     function handleChangeMes(event) {
