@@ -4,7 +4,7 @@ import { Router } from '@reach/router'
 
 import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
-import Contacts from "./components/Contacts";
+import Contacts from "./components/Contacts"
 import AnonymousMes from './components/AnonymousMes'
 
 function App() {
