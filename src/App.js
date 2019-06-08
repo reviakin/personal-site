@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import { Router } from '@reach/router'
 
 import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
