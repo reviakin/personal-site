@@ -7,16 +7,24 @@ export default function Contacts() {
                 <h2>Contacts:</h2>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/reviakin_/">Instagram</a>
+                        <a href="https://www.instagram.com/reviakin_/">
+                            Instagram
+                        </a>
                     </li>
                     <li>
-                        <a href="https://vk.com/id539526023">VK</a>
+                        <a href="https://vk.com/id539526023">
+                            VK
+                        </a>
                     </li>
                     <li>
-                        <a href="https://t.me/reviak1n">Telegram</a>
+                        <a href="https://t.me/reviak1n">
+                            Telegram
+                        </a>
                     </li>
                     <li>
-                        <a href="mailto:reviakindi@gmail.com?subject=Your personal site is amazing">Email</a>
+                        <a href="mailto:reviakindi@gmail.com?subject=Your personal site is amazing">
+                            Email
+                        </a>
                     </li>
                 </ul>
             </div>
