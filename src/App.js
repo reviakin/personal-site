@@ -12,9 +12,11 @@ function App() {
         <div>
             <h1>Reviakin Dmitry</h1>
             <Header />
-            <AboutMe />
-            <Contacts />
-            <AnonymousMes />
+            <Router>
+                <AboutMe path="/" />
+                <Contacts path="/contacts" />
+                <AnonymousMes path="/anonymous" />
+            </ Router >
         </div>
     );
 };
