@@ -31,6 +31,16 @@ export default function AnonymousMes({
         getMessageFromServer()
     }, [])
 
+    function submitMes(event) {
+        event.preventDefault()
+        var sendMes = {
+            "message": message,
+            "time": new Date()
+        }
+        axios.post("https://reviakinpersonalsite.firebaseio.com/messages.json", sendMes)
+            .then(setMessage(''))
+    }
+
     return (
         <div>
             <h2>Anonymous message:</h2>
@@ -43,7 +53,11 @@ export default function AnonymousMes({
                         onChange={handleChangeMes}
                     />
                 </label>
-                <button> Submit</button>
+                <button
+                    onClick={submitMes}
+                    disabled={!message}>
+                    Submit
+                </button>
             </form>
             <div>
                 {messages.length > 0 && messages.map(function renderMes({ message, time }) {
