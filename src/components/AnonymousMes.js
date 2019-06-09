@@ -12,17 +12,6 @@ export default function AnonymousMes({
         setMessage(event.target.value)
     }
 
-    function submitMes(event) {
-        event.preventDefault()
-        var oldMessages = [...messages]
-        var updateMessages = [
-            ...oldMessages,
-            message
-        ]
-        setMessages(updateMessages)
-        setMessage('')
-    }
-
     return (
         <div>
             <h2>Anonymous message:</h2>
@@ -35,7 +24,7 @@ export default function AnonymousMes({
                         onChange={handleChangeMes}
                     />
                 </label>
-                <button onClick={submitMes}> Submit</button>
+                <button> Submit</button>
             </form>
         </div >
     )
