@@ -13,7 +13,7 @@ function App() {
             <div className='title'>
                 <h1>Reviakin Dmitry</h1>
             </div>
-            <div className='header'>
+            <div className='navigation'>
                 <Header />
             </div>
             <div className='content'>
