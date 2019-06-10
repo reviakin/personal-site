@@ -37,6 +37,14 @@ export default function Contacts() {
                         Email
                         </a>
                 </li>
+                <li>
+                    <a
+                        href="https://www.last.fm/user/dmitryRev"
+                        target="_blank"
+                        rel='noreferrer noopener'>
+                        last.fm
+                        </a>
+                </li>
             </ul>
         </div>
     )
