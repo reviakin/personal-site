@@ -11,7 +11,7 @@ export default function Contacts() {
                         target="_blank"
                         rel='noreferrer noopener'>
                         Instagram
-                        </a>
+                    </a>
                 </li>
                 <li>
                     <a
@@ -19,7 +19,7 @@ export default function Contacts() {
                         target="_blank"
                         rel='noreferrer noopener'>
                         VK
-                        </a>
+                    </a>
                 </li>
                 <li>
                     <a
@@ -27,7 +27,7 @@ export default function Contacts() {
                         target="_blank"
                         rel='noreferrer noopener'>
                         Telegram
-                        </a>
+                    </a>
                 </li>
                 <li>
                     <a
@@ -35,7 +35,7 @@ export default function Contacts() {
                         target="_blank"
                         rel='noreferrer noopener'>
                         Email
-                        </a>
+                    </a>
                 </li>
                 <li>
                     <a
@@ -43,7 +43,7 @@ export default function Contacts() {
                         target="_blank"
                         rel='noreferrer noopener'>
                         last.fm
-                        </a>
+                    </a>
                 </li>
             </ul>
         </div>
