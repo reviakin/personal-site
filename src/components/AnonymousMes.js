@@ -66,7 +66,7 @@ export default function AnonymousMes({
                 {messages.length > 0 && messages.map(function renderMes({ message, time }) {
                     return (
                         <p key={time} className='message'>
-                            {`${message} - ${time}`}
+                            {message}   <span className='timeMessage'>{time}</span>
                         </p>
                     )
                 })}
