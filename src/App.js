@@ -10,15 +10,19 @@ import AnonymousMes from './components/AnonymousMes'
 function App() {
     return (
         <div>
-            <div>
+            <div className='title'>
                 <h1>Reviakin Dmitry</h1>
             </div>
-            <Header />
-            <Router>
-                <AboutMe path="/" />
-                <Contacts path="/contacts" />
-                <AnonymousMes path="/anonymous" />
-            </ Router >
+            <div className='header'>
+                <Header />
+            </div>
+            <div className='content'>
+                <Router>
+                    <AboutMe path="/" />
+                    <Contacts path="/contacts" />
+                    <AnonymousMes path="/anonymous" />
+                </Router>
+            </div>
         </div>
     );
 };
