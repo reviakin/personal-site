@@ -38,7 +38,10 @@ export default function AnonymousMes({
             "time": new Date()
         }
         axios.post("https://reviakinpersonalsite.firebaseio.com/messages.json", sendMes)
-            .then(setMessage(''))
+            .then(() => {
+                getMessageFromServer()
+                setMessage('')
+            })
     }
 
     return (
