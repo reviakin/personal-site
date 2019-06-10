@@ -46,7 +46,7 @@ export default function AnonymousMes({
 
     return (
         <div>
-            <h2>Anonymous message:</h2>
+            <h3>Anonymous message:</h3>
             <form>
                 <label>
                     <input
