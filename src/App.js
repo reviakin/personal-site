@@ -10,6 +10,9 @@ import AnonymousMes from './components/AnonymousMes'
 function App() {
     return (
         <div>
+            <div>
+                <h1>Reviakin Dmitry</h1>
+            </div>
             <Header />
             <Router>
                 <AboutMe path="/" />
