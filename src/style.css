@@ -37,3 +37,7 @@ body {
     "title title"
     "navigation content";
 }
+
+.message {
+  margin: 0 0 15px 0;
+}
