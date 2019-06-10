@@ -45,6 +45,14 @@ export default function Contacts() {
                         last.fm
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="https://github.com/reviakin"
+                        target="_blank"
+                        rel='noreferrer noopener'>
+                        GitHub
+                    </a>
+                </li>
             </ul>
         </div>
     )
