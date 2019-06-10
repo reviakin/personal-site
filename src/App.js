@@ -9,7 +9,7 @@ import AnonymousMes from './components/AnonymousMes'
 
 function App() {
     return (
-        <div>
+        <div className='cotainer'>
             <div className='title'>
                 <h1>Reviakin Dmitry</h1>
             </div>
