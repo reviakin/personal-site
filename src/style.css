@@ -9,3 +9,24 @@ body {
   background-color: #81a69b;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.title {
+  grid-area: title;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.content {
+  grid-area: content;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "title title"
+    "navigation content";
+}
