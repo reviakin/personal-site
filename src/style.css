@@ -45,3 +45,14 @@ body {
 .timeMessage {
   font-weight: 550;
 }
+
+@media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 80%;
+    grid-template-areas:
+      "title"
+      "navigation"
+      "content";
+  }
+}
