@@ -10,11 +10,11 @@ export default function Header() {
                         Abount me
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/">
                         My project
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/contacts">
                         Contacts
