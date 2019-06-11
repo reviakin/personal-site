@@ -7,6 +7,11 @@ import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
 import Contacts from "./components/Contacts"
 import AnonymousMes from './components/AnonymousMes'
+import NotFound from './components/NotFound'
+
+// const NotFound = () => (
+//     <div>Sorry, nothing here.</div>
+// )
 
 function App() {
     return (
@@ -23,6 +28,7 @@ function App() {
                         <AboutMe path="/" />
                         <Contacts path="/contacts" />
                         <AnonymousMes path="/anonymous" />
+                        <NotFound default />
                     </Router>
                 </div>
             </div>
