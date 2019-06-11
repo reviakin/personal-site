@@ -31,10 +31,10 @@ var contacts = [
         "link": "https://vk.com/id539526023",
         "name": "VK"
     },
-    {
-        "link": "https://t.me/reviak1n",
-        "name": "Telegram"
-    },
+    // {
+    //     "link": "https://t.me/reviak1n",
+    //     "name": "Telegram"
+    // },
     {
         "link": "mailto:reviakindi@gmail.com?subject=Your personal site is amazing",
         "name": "Email"
