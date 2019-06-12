@@ -11,6 +11,7 @@ var projectsArr = [
 export default function Projects() {
     return (
         <div>
+            <h3>My projects:</h3>
             <ul>
                 {
                     projectsArr.map(function renderProject({ name, link }) {
