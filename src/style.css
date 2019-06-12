@@ -30,9 +30,8 @@ body {
 
 .container {
   display: grid;
-  min-height: 100vh;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 20% 80%;
   grid-template-areas:
     "title title"
     "navigation content";
@@ -49,7 +48,7 @@ body {
 @media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     grid-template-columns: auto;
-    grid-template-rows: 10% 10% 80%;
+    grid-template-rows: 20% 20% 60%;
     grid-template-areas:
       "title"
       "navigation"
