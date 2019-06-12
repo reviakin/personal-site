@@ -9,7 +9,7 @@
     "lint": "eslint \"**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "clear-build-cache": "rm -rf ./cache /dist"
+    "clear-build-cache": "rm -rf .cache/ dist/"
   },
   "author": "",
   "license": "ISC",
