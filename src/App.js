@@ -9,10 +9,6 @@ import Contacts from "./components/Contacts"
 import AnonymousMes from './components/AnonymousMes'
 import NotFound from './components/NotFound'
 
-// const NotFound = () => (
-//     <div>Sorry, nothing here.</div>
-// )
-
 function App() {
     return (
         <ErrorBoundary>
