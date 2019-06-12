@@ -5,51 +5,50 @@ export default function Header(props) {
     return (
         <div>
             <ul>
-                <li>
-                    <Link {...props} getProps={({ isCurrent }) => {
-                        return {
-                            style: {
-                                color: isCurrent ? "#E2C044" : ""
-                            }
-                        }
-                    }} to="/">
-                        Abount me
-                    </Link>
-                </li>
-                <li>
-                    <Link {...props} getProps={({ isCurrent }) => {
-                        return {
-                            style: {
-                                color: isCurrent ? "#E2C044" : ""
-                            }
-                        }
-                    }} to="/projects">
-                        My project
-                    </Link>
-                </li>
-                <li>
-                    <Link {...props} getProps={({ isCurrent }) => {
-                        return {
-                            style: {
-                                color: isCurrent ? "#E2C044" : ""
-                            }
-                        }
-                    }} to="/contacts">
-                        Contacts
-                    </Link>
-                </li>
-                <li>
-                    <Link {...props} getProps={({ isCurrent }) => {
-                        return {
-                            style: {
-                                color: isCurrent ? "#E2C044" : ""
-                            }
-                        }
-                    }} to="anonymous">
-                        Anonymous
-                    </Link>
-                </li>
+                {renderNavLink(navLink, props)}
             </ul>
         </div>
     )
+}
+
+var navLink = [
+    {
+        "name": "About me",
+        "link": "/"
+    },
+    {
+        "name": "My project",
+        "link": "/projects"
+    },
+    {
+        "name": "Contacts",
+        "link": "/contacts"
+    },
+    {
+        "name": "Anonymous",
+        "link": "/anonymous"
+    }
+]
+
+function renderNavLink(links, props) {
+    return (
+        links.map(function renderLinksToLi({ name, link }) {
+            return (
+                <li key={link}>
+                    <Link
+                        {...props} getProps={({ isCurrent }) => {
+                            return {
+                                style: {
+                                    color: isCurrent ? "#E2C055" : ""
+                                }
+                            }
+                        }}
+                        to={link}>
+                        {name}
+                    </Link>
+                </li>
+            )
+        })
+    )
+
 }
