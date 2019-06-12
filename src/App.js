@@ -7,6 +7,7 @@ import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
 import Contacts from "./components/Contacts"
 import AnonymousMes from './components/AnonymousMes'
+import Projects from './components/Projects'
 import NotFound from './components/NotFound'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                     <Router>
                         <AboutMe path="/" />
                         <Contacts path="/contacts" />
+                        <Projects path="/projects" />
                         <AnonymousMes path="/anonymous" />
                         <NotFound default />
                     </Router>
