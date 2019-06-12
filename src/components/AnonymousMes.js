@@ -63,14 +63,18 @@ export default function AnonymousMes({
                 </button>
             </form>
             <div>
-                {messages.length > 0 && messages.map(function renderMes({ message, time }) {
-                    return (
-                        <p key={time} className='message'>
-                            {message}   <span className='timeMessage'>{time}</span>
-                        </p>
-                    )
-                })}
+                {messages.length > 0 && renderMess(message)}
             </div>
         </div >
     )
+}
+
+function renderMess(mess) {
+    return mess.map(function renderMessOnP({ message, time }) {
+        return (
+            <p key={time} className='message'>
+                {message}   <span className='timeMessage'>{time}</span>
+            </p>
+        )
+    })
 }
