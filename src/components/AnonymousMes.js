@@ -23,8 +23,7 @@ export default function AnonymousMes({
                 }
             }
         }
-
-        setMessages([...dataWithIterator] || [])
+        return ([...dataWithIterator], [])
     }
 
     useEffect(() => {
