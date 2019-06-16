@@ -20,7 +20,7 @@ export default class ErrorBoundary extends Component {
             return (
                 <h1>
                     There was an error with this listing. <Link to="/">Click here</Link>{" "}
-                    to back to the home page or wait five seconds.
+                    to back to the home page.
                 </h1>
             )
         }
