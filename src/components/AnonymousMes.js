@@ -13,8 +13,13 @@ export default function AnonymousMes({
     }
 
     useEffect(() => {
-        getMessageFromServer()
+        ApplyDataFromServer()
     }, [])
+
+    async function ApplyDataFromServer(){
+        var data = await getMessageFromServer()
+        await setMessages(data)
+    }
 
     function submitMes(event) {
         event.preventDefault()
@@ -24,8 +29,8 @@ export default function AnonymousMes({
         }
         axios.post("https://reviakinpersonalsite.firebaseio.com/messages.json", sendMes)
             .then(() => {
-                getMessageFromServer()
                 setMessage('')
+                ApplyDataFromServer()
             })
     }
 
@@ -48,7 +53,7 @@ export default function AnonymousMes({
                 </button>
             </form>
             <div>
-                {messages.length > 0 && renderMess(message)}
+                {messages.length > 0 && renderMess(messages)}
             </div>
         </div >
     )
@@ -65,9 +70,9 @@ function renderMess(mess) {
 }
 
 async function getMessageFromServer() {
-    var { data } = await axios.get("https://reviakinpersonalsite.firebaseio.com/messages.json")
+    var {data} = await axios.get('https://reviakinpersonalsite.firebaseio.com/messages.json')
 
-    var dataWithIterator = {
+    var iterableDataObj = {
         ...data,
         *[Symbol.iterator]() {
             for (let key of Object.keys(this)) {
@@ -75,5 +80,6 @@ async function getMessageFromServer() {
             }
         }
     }
-    return ([...dataWithIterator], [])
+
+    return await [...iterableDataObj]
 }
