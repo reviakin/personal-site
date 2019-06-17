@@ -2,13 +2,13 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { Router } from '@reach/router'
 
-import ErrorBoundary from './components/ErrorBoundary'
-import Header from "./components/Header"
-import AboutMe from "./components/AboutMe"
-import Contacts from "./components/Contacts"
-import AnonymousMes from './components/AnonymousMes'
-import Projects from './components/Projects'
-import NotFound from './components/NotFound'
+import ErrorBoundary from './ErrorBoundary'
+import Header from "./Header"
+import AboutMe from "./AboutMe"
+import Contacts from "./Contacts"
+import AnonymousMes from './AnonymousMes'
+import Projects from './Projects'
+import NotFound from './NotFound'
 
 function App() {
     return (
