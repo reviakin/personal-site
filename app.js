@@ -13,10 +13,17 @@ app.get('/', (req,res,next)=> {
     res.render('main')
 })
 
+app.get('/projects', (req,res,next)=>{
+    res.render('projects')
+})
+
+app.get('/contacts', (req, res, next)=> {
+    res.render('contacts')
+})
+
 app.use('/', (req,res,next)=> {
     res.render('404')
 })
 
-// app.get()
 
 app.listen(3333)
