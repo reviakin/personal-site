@@ -59,7 +59,7 @@ a {
 
 .bkg-image {
   z-index: 99;
-  background-image: url(assets/background.png);
+  background-image: url('background.png');
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: blur(5px);
