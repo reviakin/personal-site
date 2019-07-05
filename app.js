@@ -6,7 +6,7 @@ app.set('view engine', 'ejs')
 app.set('views', 'views')
 
 app.get('/', (req,res,next)=> {
-    res.render('index')
+    res.render('main')
 })
 
 app.listen(3333)
