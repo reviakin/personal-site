@@ -26,6 +26,10 @@ a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+a:hover {
+  color: orange;
+}
+
 .header {
   padding: 3vw;
   background-color: rgba(113, 93, 134, 0.582);
